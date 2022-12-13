@@ -1,0 +1,107 @@
+@media screen and (max-width:480px){
+    .cuerpo {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;  
+        grid-template-areas: 
+        "navbar"
+        "carta"
+        "nuestro"
+        "servi" 
+        "contacto"
+        "pedido"
+        "foot";  }
+        
+        .navmenu { 
+            display: flex;
+           flex-direction: column;
+            align-items: center;   
+          }
+
+        .carta { grid-area: carta;
+        
+        }
+      
+      .nuestro { grid-area: nuestro;
+                
+        }
+      
+      .servi { grid-area: servi;
+                
+        }
+      
+      
+      .contacto { grid-area: contacto;
+                
+        }
+        
+      .pedido { grid-area: pedido;
+              
+        }
+      
+        .foot { grid-area: foot;
+              background-color: blue;
+              font-size: 0.87rem;
+        }       
+        
+
+}
+
+@media screen and (max-width:480px) {
+    .cuerpo_carta {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows:auto; 
+        grid-template-areas: 
+          "navbar"
+          "prod1 "
+          "prod2"
+          "prod3"
+          "prod4"
+          "foot"; 
+      }
+
+      .navbar { grid-area: navbar; }
+
+      .prod1 { grid-area: prod1; }
+
+      .prod2 { grid-area: prod2; }
+
+      .prod3 { grid-area: prod3; }
+
+      .prod4 { grid-area: prod4; }
+
+      .foot { grid-area: foot;
+      flex-direction: row; }
+}
+
+@media screen and (max-width:480px) {
+      .cuerpo-2{   
+                 .navbar2{
+                            .navmenu{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: baseline;
+                            align-items:center;
+                            .opcion{
+                             text-align: center;
+                            
+                            }   
+                            }
+                          }
+                  .text-servi{
+                    width: 95%;
+                  } 
+                  .text-local{
+                    width: 90%;
+                  }
+                  .ubi{
+                    width: 95%;
+                  }
+                .cuerpospag{
+                            .cuer2{
+                              width: 300px;
+                              height: 300px;
+                            }
+                }       
+            }
+}

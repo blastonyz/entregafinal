@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.head {
+  background: linear-gradient(to top, #f5a905, #ff7b00);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem; }
+  .head .logon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 4rem;
+    transition: 2s all ease; }
+  .head .logon:hover {
+    transform: rotate(-360deg); }
+  .head .titulo {
+    align-content: flex-end;
+    margin-top: 2rem;
+    font-family: "Playfair Display", serif; }
+
+.cuerpo {
+  background-image: url(../imagenes/fondo4.webp);
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.8fr 2.2fr 0.6fr;
+  gap: 5px 5px;
+  grid-template-areas: "navbar navbar navbar navbar navbar" "carta nuestro servi contacto pedido" "carta nuestro servi contacto pedido" "foot foot foot foot foot"; }
+  .cuerpo .navbar {
+    grid-area: navbar;
+    background-color: #22ac06;
+    font-size: 2rem; }
+    .cuerpo .navbar .navmenu {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .cuerpo .navbar .navmenu .opcion {
+        color: black;
+        text-decoration: none;
+        justify-content: center;
+        list-style-type: none;
+        transition: 2s all ease; }
+        .cuerpo .navbar .navmenu .opcion a {
+          text-decoration: none;
+          color: black; }
+        .cuerpo .navbar .navmenu .opcion a:hover {
+          color: black; }
+        .cuerpo .navbar .navmenu .opcion .btn {
+          color: black;
+          background-color: #22ac06;
+          font-size: 2rem; }
+        .cuerpo .navbar .navmenu .opcion .btn:hover {
+          color: black;
+          background-color: orange; }
+        .cuerpo .navbar .navmenu .opcion .dropdown-menu {
+          background-color: #22ac06; }
+        .cuerpo .navbar .navmenu .opcion .dropdown-item:hover {
+          background-color: orange; }
+      .cuerpo .navbar .navmenu .opcion:hover {
+        color: black;
+        background-color: orange;
+        border-radius: 5%;
+        transform: translate(10px, 10px); }
+  .cuerpo .carta {
+    grid-area: carta; }
+  .cuerpo .nuestro {
+    grid-area: nuestro; }
+  .cuerpo .servi {
+    grid-area: servi;
+    text-align: center; }
+  .cuerpo .dropdown-menu {
+    text-align: center; }
+  .cuerpo .contacto {
+    grid-area: contacto; }
+  .cuerpo .pedido {
+    grid-area: pedido; }
+    .cuerpo .pedido .num {
+      justify-content: end;
+      align-items: flex-start;
+      position: fixed; }
+      .cuerpo .pedido .num .wasap {
+        margin-right: 3rem;
+        margin-bottom: 3rem; }
+        .cuerpo .pedido .num .wasap .logo {
+          width: 150px;
+          height: 150px; }
+  .cuerpo .foot {
+    grid-area: foot;
+    background-color: rgba(0, 0, 255, 0.781);
+    text-align: center; }
+    .cuerpo .foot .redes {
+      width: 180px;
+      height: 180px; }
+  .cuerpo .des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    color: #8d510c;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-right: 10px; }
+    .cuerpo .des .fotos {
+      width: 200px;
+      height: 200px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border: 5px solid;
+      border-radius: 10px;
+      transition: 2s all ease;
+      color: #915613; }
+    .cuerpo .des .fotos:hover {
+      transform: scale(1.2, 1.2); }
+
+.cuerpo_carta {
+  background-image: url(../imagenes/fondo4.webp);
+  background-repeat: repeat;
+  background-attachment: local;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1.4fr 1.4fr 0.8fr;
+  gap: 0px 0px;
+  grid-template-areas: "navbar navbar" "prod1 prod3" "prod2 prod4" "foot foot"; }
+  .cuerpo_carta .navbar {
+    grid-area: navbar;
+    background-color: #22ac06;
+    font-size: 2rem; }
+    .cuerpo_carta .navbar .navmenu {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .cuerpo_carta .navbar .navmenu .opcion {
+        color: black;
+        text-decoration: none;
+        justify-content: center;
+        list-style-type: none;
+        transition: 2s all ease; }
+        .cuerpo_carta .navbar .navmenu .opcion a {
+          text-decoration: none;
+          color: black; }
+        .cuerpo_carta .navbar .navmenu .opcion a:hover {
+          color: black; }
+        .cuerpo_carta .navbar .navmenu .opcion .btn {
+          color: black;
+          background-color: #22ac06;
+          font-size: 2rem; }
+        .cuerpo_carta .navbar .navmenu .opcion .btn:hover {
+          color: black;
+          background-color: orange; }
+        .cuerpo_carta .navbar .navmenu .opcion .dropdown-menu {
+          background-color: #22ac06;
+          position: static; }
+        .cuerpo_carta .navbar .navmenu .opcion .dropdown-item:hover {
+          background-color: orange; }
+      .cuerpo_carta .navbar .navmenu .opcion:hover {
+        color: black;
+        background-color: orange;
+        border-radius: 5%;
+        transform: translate(10px, 10px); }
+
+.prod1 {
+  grid-area: prod1; }
+
+.prod2 {
+  grid-area: prod2; }
+
+.prod3 {
+  grid-area: prod3; }
+
+.prod4 {
+  grid-area: prod4; }
+
+.foot {
+  grid-area: foot;
+  background-color: rgba(0, 0, 255, 0.781);
+  text-align: center; }
+  .foot .redes {
+    width: 180px;
+    height: 180px; }
+  .foot .red {
+    width: 150px;
+    height: 150px; }
+
+.accordion {
+  margin-top: 2rem; }
+
+.accordion-item {
+  background-color: orange; }
+
+.accordion-button {
+  background-color: orange; }
+
+.accordion-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .accordion-body .piz {
+    font-size: 1.5rem;
+    list-style-type: none;
+    list-style-position: inside; }
+  .accordion-body .empa {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; }
+
+.servimag {
+  width: 350px;
+  height: 350px;
+  border: 5px orangered solid;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-top: 1rem; }
+
+.body-serv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; }
+  .body-serv .text-servi {
+    width: 80%;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #8d510c; }
+
+.des {
+  text-align: center;
+  font-family: "Playfair Display", serif; }
+
+.cuerpo-2 {
+  background-image: url(../imagenes/fondo4.webp);
+  background-repeat: repeat;
+  background-attachment: local;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "navbar2" "cuerpospag" "foot"; }
+  .cuerpo-2 .navbar2 {
+    grid-area: navbar2;
+    display: flex;
+    width: 100%;
+    background-color: #22ac06;
+    font-size: 2rem; }
+    .cuerpo-2 .navbar2 .navmenu {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .cuerpo-2 .navbar2 .navmenu .opcion {
+        color: black;
+        text-decoration: none;
+        justify-content: center;
+        list-style-type: none;
+        transition: 2s all ease; }
+        .cuerpo-2 .navbar2 .navmenu .opcion a {
+          text-decoration: none;
+          color: black; }
+        .cuerpo-2 .navbar2 .navmenu .opcion a:hover {
+          color: black; }
+        .cuerpo-2 .navbar2 .navmenu .opcion .btn {
+          color: black;
+          background-color: #22ac06;
+          font-size: 2rem; }
+        .cuerpo-2 .navbar2 .navmenu .opcion .btn:hover {
+          color: black;
+          background-color: orange; }
+        .cuerpo-2 .navbar2 .navmenu .opcion .dropdown-menu {
+          background-color: #22ac06; }
+        .cuerpo-2 .navbar2 .navmenu .opcion .dropdown-item:hover {
+          background-color: orange; }
+      .cuerpo-2 .navbar2 .navmenu .opcion:hover {
+        color: black;
+        background-color: orange;
+        border-radius: 5%;
+        transform: translate(10px, 10px); }
+
+.cuerpospag {
+  grid-area: cuerpospag;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: auto;
+  justify-content: center; }
+  .cuerpospag .cuer2 {
+    width: 600px;
+    height: 500px;
+    margin: 2rem; }
+  .cuerpospag .carru {
+    margin: 1rem;
+    padding: 1rem; }
+    .cuerpospag .carru .w-100 {
+      width: 500px;
+      height: 500px; }
+  .cuerpospag .text-servi {
+    margin: 1rem;
+    padding-top: 1.5rem;
+    width: 50%;
+    text-align: center;
+    color: #8d510c; }
+  .cuerpospag .text-local {
+    font-family: "Playfair Display", serif;
+    color: #8d510c;
+    font-size: 1.5rem;
+    width: 50%; }
+  .cuerpospag .ubi {
+    margin-top: 2rem;
+    width: 500px;
+    height: 500px;
+    align-items: center; }
+
+.foot .redes {
+  width: 180px;
+  height: 180px; }
+
+.foot .red {
+  width: 150px;
+  height: 150px; }
+
+.contac {
+  margin: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: orangered;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid orangered;
+  text-align: center; }
+
+@media screen and (max-width: 480px) {
+  .cuerpo {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navbar" "carta" "nuestro" "servi"  "contacto" "pedido" "foot"; }
+  .navmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .carta {
+    grid-area: carta; }
+  .nuestro {
+    grid-area: nuestro; }
+  .servi {
+    grid-area: servi; }
+  .contacto {
+    grid-area: contacto; }
+  .pedido {
+    grid-area: pedido; }
+  .foot {
+    grid-area: foot;
+    background-color: blue;
+    font-size: 0.87rem; } }
+
+@media screen and (max-width: 480px) {
+  .cuerpo_carta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navbar" "prod1 " "prod2" "prod3" "prod4" "foot"; }
+  .navbar {
+    grid-area: navbar; }
+  .prod1 {
+    grid-area: prod1; }
+  .prod2 {
+    grid-area: prod2; }
+  .prod3 {
+    grid-area: prod3; }
+  .prod4 {
+    grid-area: prod4; }
+  .foot {
+    grid-area: foot;
+    flex-direction: row; } }
+
+@media screen and (max-width: 480px) {
+  .cuerpo-2 .navbar2 .navmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center; }
+    .cuerpo-2 .navbar2 .navmenu .opcion {
+      text-align: center; }
+  .cuerpo-2 .text-servi {
+    width: 95%; }
+  .cuerpo-2 .text-local {
+    width: 90%; }
+  .cuerpo-2 .ubi {
+    width: 95%; }
+  .cuerpo-2 .cuerpospag .cuer2 {
+    width: 300px;
+    height: 300px; } }

@@ -1,0 +1,296 @@
+$color-nav:  rgb(34, 172, 6);
+$font-titulo: 'Playfair Display', serif;
+$textos:rgb(141, 81, 12); 
+$color-foot: rgba(0, 0, 255, 0.781);
+.cuerpo_carta {
+    background-image: url(../imagenes/fondo4.webp);
+    background-repeat:repeat; 
+    background-attachment: local;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 0.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "navbar navbar"
+      "prod1 prod3"
+      "prod2 prod4"
+      "foot foot"; 
+
+      .navbar { grid-area: navbar;
+        background-color: $color-nav;
+        font-size: 2rem; 
+        .navmenu { 
+          width: 100%;
+          display: flex;
+         justify-content: space-around;
+          align-items: center;
+          
+          .opcion {color: black;
+              text-decoration: none;
+              justify-content: center;
+              list-style-type: none;
+              transition: 2s all ease;
+
+              a {
+                  text-decoration: none;
+                  color: black;
+                 } 
+              
+                 a:hover{
+                  color: black;
+                 }
+
+                 
+              .btn {
+                       color: black;
+                       background-color: $color-nav;
+                       font-size: 2rem;
+                       
+                       }
+
+              .btn:hover {
+                          color: black;
+                          background-color: orange;
+                      }
+
+              .dropdown-menu {
+                       background-color:$color-nav;
+                       position: static;                       
+                      }
+
+              .dropdown-item:hover {
+                          background-color: orange;
+                      }
+
+              }
+          
+          .opcion:hover {
+                  color: black;
+                  background-color: orange;
+                  border-radius: 5%;
+                  transform: translate(10px,10px);
+              }
+        }
+       }
+       }
+
+      .prod1 { grid-area: prod1;
+      }
+    
+      .prod2 { grid-area: prod2; }
+    
+      .prod3 { grid-area: prod3; }
+    
+      .prod4 { grid-area: prod4; }
+    
+      .foot { grid-area: foot;
+        background-color: $color-foot;
+        text-align: center;
+        .redes{
+         width: 180px;
+         height: 180px;
+     
+        }
+        .red{
+          width: 150px;
+          height: 150px;
+        }
+       }
+
+       .accordion{
+        margin-top: 2rem;
+       
+       }
+      .accordion-item {
+        background-color: orange;
+      
+        
+       }
+ 
+       .accordion-button {
+         background-color: orange;
+       }
+ 
+       
+     .accordion-body{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         .piz{
+            font-size: 1.5rem;
+            list-style-type: none;
+            list-style-position: inside;
+        }
+        .empa {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+           }
+        
+     }
+     .servimag{
+        width: 350px;
+        height: 350px;
+        border: 5px orangered solid;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .body-serv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        .text-servi {
+            width: 80%;
+            text-align: center;
+            font-family: $font-titulo;
+            color:$textos;
+        }
+    }
+    
+    .des {
+        text-align: center;
+        font-family: $font-titulo
+    }
+    
+ 
+  
+  
+  .cuerpo-2 {
+    background-image: url(../imagenes/fondo4.webp);
+    background-repeat:repeat; 
+    background-attachment: local;
+    display: grid; 
+    grid-template-columns: 1fr ; 
+    grid-template-rows:auto; 
+    grid-template-areas: 
+      "navbar2"
+      "cuerpospag"
+      "foot"; 
+    .navbar2 { grid-area: navbar2;
+        display: flex;
+        width: 100%; 
+        background-color: $color-nav;
+        font-size: 2rem;
+           .navmenu { 
+            width: 100%;
+            display: flex;
+           justify-content: space-around;
+            align-items: center;
+            
+            .opcion {color: black;
+                text-decoration: none;
+                justify-content: center;
+                list-style-type: none;
+                transition: 2s all ease;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                   } 
+                
+                   a:hover{
+                    color: black;
+                   }
+
+                   
+                .btn {
+                         color: black;
+                         background-color: $color-nav;
+                         font-size: 2rem;
+                         }
+
+                .btn:hover {
+                            color: black;
+                            background-color: orange;
+                        }
+
+                .dropdown-menu {
+                         background-color:$color-nav;
+                        }
+
+                .dropdown-item:hover {
+                            background-color: orange;
+                        }
+
+                }
+            
+            .opcion:hover {
+                    color: black;
+                    background-color: orange;
+                    border-radius: 5%;
+                    transform: translate(10px,10px);
+                }
+          }
+         }
+    }
+        
+    .cuerpospag {grid-area: cuerpospag;
+          display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          margin-top: 2rem; 
+          width: auto;
+          justify-content: center;
+        .cuer2 {
+                width: 600px;
+                height: 500px;
+                margin: 2rem;
+            }
+        .carru{
+          margin: 1rem;
+          padding: 1rem;
+           
+            .w-100{
+              width: 500px;
+              height: 500px;
+              
+            
+          }
+        }          
+        .text-servi{
+          margin: 1rem;
+          padding-top: 1.5rem;
+          width: 50%;
+          text-align: center;
+          color: $textos;
+        }
+        .text-local{
+          font-family: $font-titulo;
+          color: $textos;
+          font-size: 1.5rem;
+          width: 50%;
+        }
+        .ubi{
+          margin-top: 2rem;
+          width: 500px;
+          height: 500px;
+          align-items: center;}
+      }
+        
+    .foot { @extend .foot;
+      .redes{
+       width: 180px;
+       height: 180px;
+   
+      }
+      .red{
+        width: 150px;
+        height: 150px;
+      }
+                     }  
+  
+  
+  .contac {
+    margin: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: orangered;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid orangered;
+    text-align: center;
+  }
