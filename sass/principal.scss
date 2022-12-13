@@ -163,18 +163,47 @@ $color-foot: rgba(0, 0, 255, 0.781);
                 .fotos {
                     width: 200px;
                     height: 200px;
-                    margin-top: 2rem;
+                    margin-top: 3rem;
                     margin-bottom: 2rem;
                     border: 5px solid;
                     border-radius: 10px;
                     transition: 2s all ease;
                     color: rgb(145, 86, 19);
+                    align-items: center;
                 }
             
                 .fotos:hover {
                     transform: scale(1.2,1.2);
                 }
-            }     
+
+            }   
+            .carta{
+                .tex1{padding-bottom: 30px;
+
+                }
+        }  
+        .nuestro{
+            .tex2 {padding-bottom: 70px;
+                
+                 }
+         }  
+
+         .servi{
+            .tex3{padding-top: 10px;
+                
+            }
+         }  
+
+         .contacto{
+                    .tex4{padding-bottom: 70px;
+
+                    }
+         }
+         .pedido{
+                    .tex5{padding-bottom: 40px;
+
+                    }
+         }
       }
     
       

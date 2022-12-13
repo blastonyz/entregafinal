@@ -109,14 +109,25 @@
     .cuerpo .des .fotos {
       width: 200px;
       height: 200px;
-      margin-top: 2rem;
+      margin-top: 3rem;
       margin-bottom: 2rem;
       border: 5px solid;
       border-radius: 10px;
       transition: 2s all ease;
-      color: #915613; }
+      color: #915613;
+      align-items: center; }
     .cuerpo .des .fotos:hover {
       transform: scale(1.2, 1.2); }
+  .cuerpo .carta .tex1 {
+    padding-bottom: 30px; }
+  .cuerpo .nuestro .tex2 {
+    padding-bottom: 70px; }
+  .cuerpo .servi .tex3 {
+    padding-top: 10px; }
+  .cuerpo .contacto .tex4 {
+    padding-bottom: 70px; }
+  .cuerpo .pedido .tex5 {
+    padding-bottom: 40px; }
 
 .cuerpo_carta {
   background-image: url(../imagenes/fondo4.webp);
@@ -124,7 +135,7 @@
   background-attachment: local;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 1.4fr 1.4fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr 1.6fr 0.4fr;
   gap: 0px 0px;
   grid-template-areas: "navbar navbar" "prod1 prod3" "prod2 prod4" "foot foot"; }
   .cuerpo_carta .navbar {
@@ -167,6 +178,8 @@
 
 .prod1 {
   grid-area: prod1; }
+  .prod1 .uno {
+    margin: 32px; }
 
 .prod2 {
   grid-area: prod2; }
@@ -176,6 +189,23 @@
 
 .prod4 {
   grid-area: prod4; }
+
+.body-serv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding-top: 1rem; }
+  .body-serv .card {
+    width: 90%; }
+    .body-serv .card .card-body {
+      background-color: rgba(255, 166, 0, 0.521); }
+      .body-serv .card .card-body .card-text {
+        font-size: 1rem;
+        color: #8d510c; }
+        .body-serv .card .card-body .card-text ul {
+          color: #8d510c; }
 
 .foot {
   grid-area: foot;
@@ -209,26 +239,6 @@
     width: 150px;
     height: 150px;
     border-radius: 10px; }
-
-.servimag {
-  width: 350px;
-  height: 350px;
-  border: 5px orangered solid;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  margin-top: 1rem; }
-
-.body-serv {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem; }
-  .body-serv .text-servi {
-    width: 80%;
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    color: #8d510c; }
 
 .des {
   text-align: center;

@@ -8,7 +8,7 @@ $color-foot: rgba(0, 0, 255, 0.781);
     background-attachment: local;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.4fr 1.4fr 1.4fr 0.8fr; 
+    grid-template-rows: 0.4fr 1.6fr 1.6fr 0.4fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "navbar navbar"
@@ -75,14 +75,48 @@ $color-foot: rgba(0, 0, 255, 0.781);
        }
 
       .prod1 { grid-area: prod1;
+               .uno{
+                      margin: 32px;
+               } 
       }
     
-      .prod2 { grid-area: prod2; }
+      .prod2 { grid-area: prod2;
+        
+            }
     
-      .prod3 { grid-area: prod3; }
+      .prod3 { grid-area: prod3;
+        
+            }
     
-      .prod4 { grid-area: prod4; }
+      .prod4 { grid-area: prod4;
+        
+      }
     
+      .body-serv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding-top: 1rem;
+       
+        .card{
+          width:90%;
+         
+          
+          .card-body{
+            background-color: rgba(255, 166, 0, 0.521);
+            .card-text{
+                        font-size: 1rem;
+                        color:$textos;
+                        ul {
+                          color: $textos;
+                        }
+                    }
+                
+                  }  
+             }
+            }
       .foot { grid-area: foot;
         background-color: $color-foot;
         text-align: center;
@@ -128,29 +162,8 @@ $color-foot: rgba(0, 0, 255, 0.781);
            }
         
      }
-     .servimag{
-        width: 350px;
-        height: 350px;
-        border: 5px orangered solid;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
-    }
-    
-    .body-serv {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-        .text-servi {
-            width: 80%;
-            text-align: center;
-            font-family: $font-titulo;
-            color:$textos;
-        }
-    }
-    
+   
+
     .des {
         text-align: center;
         font-family: $font-titulo
